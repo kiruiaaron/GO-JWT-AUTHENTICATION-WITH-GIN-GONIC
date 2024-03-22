@@ -1,8 +1,10 @@
 package routes
 
-{
-	
-}
+import (
+	"github.com/gin-gonic/gin"
+	controller "github.com/kiruiaaron/GO-JWT-AUTHENTICATION-WITH-GIN-GONIC/controllers"
+	"github.com/kiruiaaron/GO-JWT-AUTHENTICATION-WITH-GIN-GONIC/middleware"
+)
 
 func UserRoutes(incomingRoutes *gin.Engine){
 	incomingRoutes.Use(middleware.Authenticate())
